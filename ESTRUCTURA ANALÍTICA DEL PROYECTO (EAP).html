@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAP - Proyecto Telebachillerato Rural</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .title {
+            text-align: center;
+            color: #1a5490;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+        }
+        .level {
+            margin-bottom: 40px;
+        }
+        .level-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .objective-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .fines-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .fin-box {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 12px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .medios-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+        .medio-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .medio-box:hover {
+            transform: scale(1.05);
+        }
+        .actividades {
+            display: none;
+            background: #ecf0f1;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 6px;
+            font-size: 10px;
+            color: #2c3e50;
+        }
+        .actividades.active {
+            display: block;
+        }
+        .actividades ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        .actividades li {
+            margin: 5px 0;
+        }
+        .nota {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 11px;
+            color: #856404;
+            border-radius: 4px;
+        }
+        .nota strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #856404;
+        }
+        .arrow {
+            text-align: center;
+            color: #3498db;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            ESTRUCTURA ANALÍTICA DEL PROYECTO (EAP)<br>
+            Intervención Didáctica en Ciencias Experimentales - Telebachillerato Rural
+        </div>
+
+        <!-- COMPONENTES PRINCIPALES / FINES -->
+        <div class="level">
+            <div class="level-title">Componentes Principales (Fines)</div>
+            <div class="fines-grid">
+                <div class="fin-box">CP1. Equidad educativa lograda</div>
+                <div class="fin-box">CP2. Potencial académico desarrollado</div>
+                <div class="fin-box">CP3. Satisfacción y confianza estudiantil lograda</div>
+                <div class="fin-box">CP4. Participación exitosa en competencias científicas</div>
+                <div class="fin-box">CP5. Metodologías diferenciadas implementadas</div>
+                <div class="fin-box">CP6. Contribución al desarrollo científico-tecnológico regional</div>
+                <div class="fin-box">CP7. Reconocimiento profesional y liderazgo educativo alcanzado</div>
+                <div class="fin-box">CP8. Estudiantes formados como ciudadanos científicamente alfabetizados</div>
+            </div>
+        </div>
+
+        <div class="nota">
+            <strong>NOTA METODOLÓGICA 2:</strong>
+            Durante la construcción de la EAP se detectó un ajuste necesario en la jerarquía de objetivos. "Lenguaje científico estructurado" originalmente aparecía como FIN, pero se reconoció que es un MEDIO (competencia docente) que contribuye al FIN de formar "Estudiantes como ciudadanos científicamente alfabetizados". Por tanto, se reubicó como Componente Operativo (CO5).
+        </div>
+
+        <div class="arrow">⬇</div>
+
+        <!-- OBJETIVO GENERAL -->
+        <div class="level">
+            <div class="level-title">Objetivo General</div>
+            <div class="objective-box">
+                El docente desarrolla competencias disciplinares especializadas en ciencias experimentales que le permiten ofrecer un acompañamiento formativo científicamente riguroso, pedagógicamente efectivo y contextualizado al entorno productivo cañero
+            </div>
+        </div>
+
+        <div class="nota">
+            <strong>NOTA METODOLÓGICA 1:</strong>
+            Durante la elaboración de la EAP se identificó la necesidad de ajustar el objetivo general del árbol de objetivos. Se agregó explícitamente "el docente desarrolla competencias disciplinares especializadas" y se enfatizó la contextualización al entorno productivo cañero, ya que los Componentes Operativos y Principales agregados (especialmente los 5 complementarios del árbol de problemas) demandaban un objetivo general más específico que reconociera tanto el desarrollo de competencias docentes como la vinculación con el contexto productivo local.
+        </div>
+
+        <div class="arrow">⬇</div>
+
+        <!-- COMPONENTES OPERATIVOS / MEDIOS -->
+        <div class="level">
+            <div class="level-title">Componentes Operativos (Medios) - Click para ver actividades</div>
+            <div class="medios-grid">
+                <div class="medio-box" onclick="toggleActividades('co1')">
+                    CO1. Formación disciplinar especializada adquirida
+                    <div id="co1" class="actividades">
+                        <ul>
+                            <li>Cursar diplomado en didáctica de ciencias</li>
+                            <li>Participar en comunidades virtuales</li>
+                            <li>Estudiar CNEYT I (materia e interacciones)</li>
+                            <li>Estudiar CNEYT III (ecosistemas y energía)</li>
+                            <li>Analizar procesos agroindustriales cañeros</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co2')">
+                    CO2. Retroalimentación científicamente rigurosa desarrollada
+                    <div id="co2" class="actividades">
+                        <ul>
+                            <li>Diseñar rúbricas de evaluación profunda</li>
+                            <li>Elaborar banco de preguntas de indagación</li>
+                            <li>Crear protocolos de retroalimentación contextualizada</li>
+                            <li>Desarrollar instrumentos epistemológicos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co3')">
+                    CO3. Experiencias prácticas auténticas implementadas
+                    <div id="co3" class="actividades">
+                        <ul>
+                            <li>Diseñar prácticas de observación cañeras</li>
+                            <li>Elaborar guías de análisis de muestras</li>
+                            <li>Implementar simulaciones digitales</li>
+                            <li>Realizar entrevistas con trabajadores</li>
+                            <li>Documentar procesos industriales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co4')">
+                    CO4. Metodologías diferenciadas por disciplina implementadas
+                    <div id="co4" class="actividades">
+                        <ul>
+                            <li>Adaptar indagación guiada para química</li>
+                            <li>Adaptar modelización para física</li>
+                            <li>Adaptar estudio de casos para ecología</li>
+                            <li>Adaptar análisis de sistemas para energía</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co5')">
+                    CO5. Lenguaje científico estructurado desarrollado
+                    <div id="co5" class="actividades">
+                        <ul>
+                            <li>Elaborar glosarios contextualizados</li>
+                            <li>Diseñar actividades de traducción lenguaje</li>
+                            <li>Crear mapas conceptuales de vocabulario</li>
+                            <li>Implementar bitácoras científicas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co6')">
+                    CO6. Trabajo colaborativo y aprendizaje social implementado
+                    <div id="co6" class="actividades">
+                        <ul>
+                            <li>Diseñar proyectos grupales de investigación</li>
+                            <li>Establecer roles específicos en equipos</li>
+                            <li>Implementar exposiciones inter-grupales</li>
+                            <li>Facilitar debates científicos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co7')">
+                    CO7. Competencias de enseñanza reflexiva explícita desarrolladas
+                    <div id="co7" class="actividades">
+                        <ul>
+                            <li>Llevar diario de práctica docente</li>
+                            <li>Grabar y analizar propias clases</li>
+                            <li>Explicitar objetivos a estudiantes</li>
+                            <li>Realizar sesiones de metacognición colectiva</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co8')">
+                    CO8. Instrumentos de evaluación epistemológica implementados
+                    <div id="co8" class="actividades">
+                        <ul>
+                            <li>Diseñar escaleras de retroalimentación</li>
+                            <li>Elaborar portafolios de evidencias</li>
+                            <li>Crear rúbricas de pensamiento científico</li>
+                            <li>Implementar auto y coevaluación</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co9')">
+                    CO9. Competencias de auto-observación docente desarrolladas
+                    <div id="co9" class="actividades">
+                        <ul>
+                            <li>Practicar pausas reflexivas en clase</li>
+                            <li>Registrar reacciones automáticas</li>
+                            <li>Analizar patrones de intervención</li>
+                            <li>Ajustar mediación en tiempo real</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co10')">
+                    CO10. Competencias de mediación emocional especializada desarrolladas
+                    <div id="co10" class="actividades">
+                        <ul>
+                            <li>Identificar estados emocionales estudiantiles</li>
+                            <li>Diseñar estrategias de contención</li>
+                            <li>Canalizar emociones como motores</li>
+                            <li>Valorizar saberes empíricos familiares</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co11')">
+                    CO11. Aprendizaje por descubrimiento vinculado a procesos productivos cañeros
+                    <div id="co11" class="actividades">
+                        <ul>
+                            <li>Diseñar problemas abiertos sobre fenómenos cañeros</li>
+                            <li>Facilitar observación guiada de procesos</li>
+                            <li>Propiciar experimentación con variables</li>
+                            <li>Guiar construcción de explicaciones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co12')">
+                    CO12. Habilidades de pensamiento científico mediante análisis de procesos agroindustriales
+                    <div id="co12" class="actividades">
+                        <ul>
+                            <li>Analizar datos de rendimiento agrícola</li>
+                            <li>Interpretar gráficas de producción</li>
+                            <li>Inferir relaciones causales variables-productividad</li>
+                            <li>Generalizar principios científicos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co13')">
+                    CO13. Aprendizaje basado en problemas del contexto agroindustrial cañero
+                    <div id="co13" class="actividades">
+                        <ul>
+                            <li>Identificar problemáticas reales locales</li>
+                            <li>Formular preguntas de investigación</li>
+                            <li>Diseñar protocolos de indagación</li>
+                            <li>Proponer soluciones viables fundamentadas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co14')">
+                    CO14. Proyectos integradores transdisciplinarios vinculados al sistema agroindustrial
+                    <div id="co14" class="actividades">
+                        <ul>
+                            <li>Integrar química, física y biología</li>
+                            <li>Diseñar proyectos de eficiencia energética</li>
+                            <li>Evaluar impacto ambiental del monocultivo</li>
+                            <li>Proponer modelos alternativos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co15')">
+                    CO15. Producción de contenidos multimedia contextualizados
+                    <div id="co15" class="actividades">
+                        <ul>
+                            <li>Capacitarse en herramientas digitales</li>
+                            <li>Crear videos didácticos sobre procesos cañeros</li>
+                            <li>Diseñar simulaciones/animaciones</li>
+                            <li>Producir infografías científicas contextualizadas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co16')">
+                    CO16. Estrategias para superar restricciones de trabajo de campo
+                    <div id="co16" class="actividades">
+                        <ul>
+                            <li>Diseñar observación desde perímetro escolar</li>
+                            <li>Implementar entrevistas documentadas</li>
+                            <li>Analizar casos documentados</li>
+                            <li>Crear alianzas institucionales formales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co17')">
+                    CO17. Modelo didáctico integrador que articule estrategias constructivistas
+                    <div id="co17" class="actividades">
+                        <ul>
+                            <li>Diseñar secuencia de 5 fases constructivista</li>
+                            <li>Establecer criterios de selección estrategias</li>
+                            <li>Articular estrategias temporalmente</li>
+                            <li>Evaluar coherencia epistemología-práctica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co18')">
+                    CO18. Modelo epistemológico constructivista explícito desarrollado
+                    <div id="co18" class="actividades">
+                        <ul>
+                            <li>Estudiar fundamentos constructivistas</li>
+                            <li>Explicitar concepción del aprendizaje</li>
+                            <li>Diseñar contrato didáctico constructivista</li>
+                            <li>Evaluar coherencia discurso-práctica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co19')">
+                    CO19. Infraestructura adaptada implementada
+                    <div id="co19" class="actividades">
+                        <ul>
+                            <li>Gestionar espacios alternativos escolares</li>
+                            <li>Adquirir materiales básicos bajo costo</li>
+                            <li>Equipar aula con recursos tecnológicos</li>
+                            <li>Establecer alianzas con ingenio azucarero</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co20')">
+                    CO20. Modelo educativo contextualizado al entorno productivo cañero
+                    <div id="co20" class="actividades">
+                        <ul>
+                            <li>Diseñar currículo paralelo contextualizado</li>
+                            <li>Elaborar secuencias desde problemáticas locales</li>
+                            <li>Integrar saberes empíricos familiares</li>
+                            <li>Evaluar pertinencia del modelo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co21')">
+                    CO21. Programas de especialización y nivelación disciplinar establecidos
+                    <div id="co21" class="actividades">
+                        <ul>
+                            <li>Inscribirse en cursos/diplomados</li>
+                            <li>Participar en talleres didáctica específica</li>
+                            <li>Asistir a congresos de profesores</li>
+                            <li>Realizar estudios autodirigidos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co22')">
+                    CO22. Redes de apoyo profesional docente creadas
+                    <div id="co22" class="actividades">
+                        <ul>
+                            <li>Incorporarse a comunidades virtuales</li>
+                            <li>Establecer vínculos con telebachilleratos cercanos</li>
+                            <li>Contactar investigadores como mentores</li>
+                            <li>Crear red local con trabajadores del ingenio</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co23')">
+                    CO23. Sistema de contratación docente mejorado (incidencia institucional)
+                    <div id="co23" class="actividades">
+                        <ul>
+                            <li>Documentar experiencias exitosas</li>
+                            <li>Presentar propuestas sobre perfiles docentes</li>
+                            <li>Participar en política educativa regional</li>
+                            <li>Generar evidencia de impacto del modelo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="medio-box" onclick="toggleActividades('co24')">
+                    CO24. Proyecto formativo explícito sobre tipo de ser humano y sociedad a formar
+                    <div id="co24" class="actividades">
+                        <ul>
+                            <li>Definir perfil de egresado deseado</li>
+                            <li>Establecer horizonte ético-político</li>
+                            <li>Alinear contenidos-metodologías-evaluaciones</li>
+                            <li>Comunicar proyecto a comunidad educativa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nota">
+            <strong>NOTA METODOLÓGICA 3:</strong>
+            Durante la elaboración de la EAP se identificó que cinco elementos cruciales del árbol de problemas no habían sido considerados explícitamente en el árbol de objetivos original: CO15 (Producción de contenidos multimedia), CO16 (Estrategias para restricciones de campo), CO17 (Modelo didáctico integrador), CO18 (Modelo epistemológico constructivista) y CO24 (Proyecto formativo explícito). Se integraron como Componentes Operativos adicionales porque representan medios estratégicos indispensables para resolver problemáticas centrales del diagnóstico.
+        </div>
+
+        <div style="margin-top: 30px; padding: 15px; background: #e8f5e9; border-radius: 6px; font-size: 12px;">
+            <strong>RESUMEN:</strong><br>
+            • 8 Componentes Principales (Fines)<br>
+            • 1 Objetivo General<br>
+            • 24 Componentes Operativos (Medios): 19 originales del árbol de objetivos + 5 complementarios
+        </div>
+    </div>
+
+    <script>
+        function toggleActividades(id) {
+            const element = document.getElementById(id);
+            const allActividades = document.querySelectorAll('.actividades');
+            
+            // Cerrar todas las actividades excepto la clickeada
+            allActividades.forEach(act => {
+                if (act.id !== id) {
+                    act.classList.remove('active');
+                }
+            });
+            
+            // Toggle la clickeada
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
